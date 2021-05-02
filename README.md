@@ -1,2 +1,2 @@
-# dw-imdb
-A repository for IMDB DW Project IS313
+# dw-sales
+A repository for Sales DW Project IS313
