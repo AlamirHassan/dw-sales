@@ -46,5 +46,5 @@ According to Data Warehouse Schema:
     * Employees
 
 - Measrues:
-    * Total price for transaction.
+    * Total price.
     * Quantity sold.
