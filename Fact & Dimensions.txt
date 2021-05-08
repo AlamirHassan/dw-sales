@@ -1,0 +1,38 @@
+Employee Dimension
+- Employee ID
+- First Name
+- Last Name
+- Gender
+- City Name
+- HireDate
+------------------
+Product Dimension
+- Product ID
+- Product Name
+- Price
+- Category Name
+- Class
+- Modify Date
+- Vitality Days
+------------------
+Date
+- Transaction Date
+- Transaction Day
+- Transaction Month
+- Transaction Year
+------------------
+Customer
+- Customer ID
+- First Name
+- Last Name
+- City Name
+------------------
+Transaction Fact
+- Transaction Number (PK)
+- Employee ID (FK)
+- Product ID (FK)
+- Customer ID (FK)
+- Transaction Date (FK)
+- Quantity
+- Total Price
+- Discount
