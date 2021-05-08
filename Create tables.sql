@@ -45,3 +45,6 @@ CREATE TABLE [Transaction Fact](
 [Total Price] float NOT NULL,
 Discount float NOT NULL
 );
+              
+------
+DECLARE @VarFact
