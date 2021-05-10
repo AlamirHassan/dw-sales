@@ -1,0 +1,61 @@
+---product query
+Select products.ProductID as [Product ID],products.ProductName as [Product Name],
+products.Price as [Product Price],products.Class as Class,product.ModifyDate as[Modify Date]
+products.VitalityDays as [Vitality Days],categories.CategoryName as [Category Name]
+from products , categories
+where product.CategoryID=categories.CategoryID
+
+
+***************************************************************
+
+description:
+........List of items that used in the query.
+
+we used two items products , categories
+
+.......Actions that will be applied to each query item.
+
+query will get product name,ID,price,class,valitilydays,modifydate from table product
+and
+will get category name from table category
+on contion product.CategoryID=categories.CategoryID
+
+.......Description of the selected item.
+
+here the select items will be the products with the attributes menttioned above and also 
+it's category name 
+
+
+***************************************************************
+
+
+
+---Employee query
+Select employees.EmployeeID as[Employee ID] , employees.FirstName as [First Name],  employees.LastName as [Last Name],
+ employees.Gender as [Gender], cities.CityName as [City Name]
+from employees,cities
+where employees.CityID = cities.CityID
+
+
+***************************************************************
+
+description:
+........List of items that  used in the query.
+
+we used two items employees , cities
+
+.......Actions that will be applied to each query item.
+
+query will get employee firstname,lastname,ID,gender
+and
+will get city name from table cities
+
+on contion employees.CityID = cities.CityID
+
+.......Description of the selected item.
+
+here the select items will be the employee with the attributes menttioned above and also 
+it's city name 
+
+
+***************************************************************
