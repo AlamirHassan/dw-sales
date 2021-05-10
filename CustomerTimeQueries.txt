@@ -1,19 +1,13 @@
-Customer Dimension:
-
-Select customers.CustomerID as [Customer ID],
+SELECT customers.CustomerID as [Customer ID],
 customers.FirstName as [First Name],
 customers.LastName as [Last Name],
 cities.CityName as [City Name]
-from customers, cities
-where customers.CityID = cities.CityID
-
--------------------------------------------------------------------------------------------
-
-Date Dimension:
-
-Select distinct (sales.SalesDate) as [Transaction Date],
-day(sales.SalesDate) as [Transaction Day],
-month(sales.SalesDate) as [Transaction Month],
-year(sales.SalesDate) as [Transaction Year]
-from sales.SalesDate
-order by sales.SalesDate
+FROM customers, cities
+WHERE customers.CityID = cities.CityID
+-------------------------------------------------------
+SELECT DISTINCT(sales.SalesDate) as [Transaction Date],
+DAY(sales.SalesDate) as [Transaction Day],
+MONTH(sales.SalesDate) as [Transaction Month],
+YEAR(sales.SalesDate) as [Transaction Year]
+FROM sales
+ORDER BY sales.SalesDate
