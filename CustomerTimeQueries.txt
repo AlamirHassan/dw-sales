@@ -1,13 +1,13 @@
-SELECT customers.CustomerID as [Customer ID],
-customers.FirstName as [First Name],
-customers.LastName as [Last Name],
-cities.CityName as [City Name]
+SELECT customers.CustomerID AS [Customer ID],
+customers.FirstName AS [First Name],
+customers.LastName AS [Last Name],
+cities.CityName AS [City Name]
 FROM customers, cities
 WHERE customers.CityID = cities.CityID
 -------------------------------------------------------
-SELECT DISTINCT(sales.SalesDate) as [Transaction Date],
-DAY(sales.SalesDate) as [Transaction Day],
-MONTH(sales.SalesDate) as [Transaction Month],
-YEAR(sales.SalesDate) as [Transaction Year]
+SELECT DISTINCT(sales.SalesDate) AS [Transaction Date],
+DAY(sales.SalesDate) AS [Transaction Day],
+MONTH(sales.SalesDate) AS [Transaction Month],
+YEAR(sales.SalesDate) AS [Transaction Year]
 FROM sales
 ORDER BY sales.SalesDate
