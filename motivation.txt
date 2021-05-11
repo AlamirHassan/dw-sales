@@ -1,0 +1,6 @@
+Motivation
+
+we are creating sales data warehouse in order to help descision maker have a quick , inexpensive , flexidle look
+at data needed to make good decision using deminsions (product, employee , customer , Time)
+and fact table contains the needed measures for desicion making which are ( quantity sold, price)
+using the transactions creating by every sales order
