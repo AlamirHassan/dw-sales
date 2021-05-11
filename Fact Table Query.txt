@@ -9,3 +9,11 @@ FROM sales INNER JOIN products ON sales.ProductID = products.ProductID
 INNER JOIN employees ON sales.SalesPersonID = employees.EmployeeID
 INNER JOIN customers ON sales.CustomerID = customers.CustomerID
 GROUP BY sales.TransactionNumber, employees.EmployeeID, products.ProductID, customers.CustomerID, sales.SalesDate
+
+
+- Desctiption
+
+The query used to make the fact table working as coming:
+first selects the fact table attributes and columns [Transaction Number, Employee ID, Product ID, Customer ID, Transaction Date]
+then calculate the total quantity sold from a specific product in the date, and calulates the total price for the quantity sold,
+second make join to collect the data from the all different tables and group results by the selected columns.
