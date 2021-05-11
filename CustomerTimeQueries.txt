@@ -4,10 +4,32 @@ customers.LastName AS [Last Name],
 cities.CityName AS [City Name]
 FROM customers, cities
 WHERE customers.CityID = cities.CityID
--------------------------------------------------------
+*******************************************************************************
+Description:
+
+First, we select (CustomerID, FirstName and LastName)
+from customers table and (CityName) from cities table,
+under condition "customers.CityID = cities.CityID",
+(which means that CityID in customers table must match CityID in cities table).
+
+Then, we update the attributes' names above by
+(Customer ID, First Name, Last Name and City Name)
+respectively to be the new names in the star schema.
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 SELECT DISTINCT(sales.SalesDate) AS [Transaction Date],
 DAY(sales.SalesDate) AS [Transaction Day],
 MONTH(sales.SalesDate) AS [Transaction Month],
 YEAR(sales.SalesDate) AS [Transaction Year]
 FROM sales
 ORDER BY sales.SalesDate
+*******************************************************************************
+Description:
+
+First, we select (SalesDate) from sales table
+"which is an attribute containing the full date",
+and then we extract three more attributes from it which are (DAY, MONTH and YEAR).
+
+Then, we update the attributes' names above by
+(Transaction Date, Transaction Day, Transaction Month, Transaction Year)
+respectively to be the new names in the star schema.
