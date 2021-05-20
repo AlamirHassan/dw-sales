@@ -1,0 +1,11 @@
+ INSERT INTO sales (SalesDate)
+SELECT SalesDate
+FROM sales where SalesDate != 'NULL'
+
+UPDATE sales 
+SET SalesDate = OtherTable.SalesDate
+FROM (
+    SELECT Sales.SalesDate
+    FROM sales where SalesDate != 'NULL') AS OtherTable
+WHERE 
+    sales.SalesDate = 'NULL'
