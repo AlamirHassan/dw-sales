@@ -14,6 +14,8 @@
     * Collect the data, Understand and Cleaning.
   * Phase #2
     * Star Schema.
+  * Phase #3
+    * Cube - MDX - Reporting.
 
 - - - - 
 ### Sample SQL Scripts from the project
