@@ -31,6 +31,12 @@ SUM(sales.TotalPrice * (1 - sales.Discount) * sales.Quantity) AS [Total Price]
 FROM sales INNER JOIN products ON sales.ProductID = products.ProductID
 INNER JOIN employees ON sales.SalesPersonID = employees.EmployeeID
 INNER JOIN customers ON sales.CustomerID = customers.CustomerID
-GROUP BY sales.TransactionNumber, employees.EmployeeID, products.ProductID, customers.CustomerID, sales.SalesDate
+GROUP BY sales.TransactionNumber, employees.EmployeeID,
+products.ProductID, customers.CustomerID, sales.SalesDate
 
 ```
+
+### Sample MDX Query
+- - - -
+![EX_MDX_Query](https://user-images.githubusercontent.com/54971231/118966092-a53ee800-b969-11eb-956d-951036d1b908.png)
+
