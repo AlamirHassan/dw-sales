@@ -40,3 +40,12 @@ products.ProductID, customers.CustomerID, sales.SalesDate
 - - - -
 ![EX_MDX_Query](https://user-images.githubusercontent.com/54971231/118966092-a53ee800-b969-11eb-956d-951036d1b908.png)
 
+```sql
+
+SELECT
+{[Measures].[Quantity Sold],[Measures].[Total Price]} ON COLUMNS,
+[Transaction Date].[Transaction Date].&[2018-01-04T00:00:00] ON ROWS
+FROM [DW Project 313]
+WHERE [Product].[Product Name].&[Bananas]
+
+```
