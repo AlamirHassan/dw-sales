@@ -1,0 +1,12 @@
+SELECT
+{ [Measures].[Quantity Sold],[Measures].[Total Price] } ON COLUMNS,
+[Transaction Date].[Transaction Date].&[2018-01-04T00:00:00] ON ROWS
+FROM [DW Project 313]
+WHERE [Product].[Product Name].&[Bananas]
+
+----- OUTPUT
+---------------------------------------------
+	          Quantity Sold	| Total Price     |
+---------------------------------------------
+2018-01-04:	     724	    | 8035188480.34   |
+---------------------------------------------
