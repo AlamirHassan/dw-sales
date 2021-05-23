@@ -49,3 +49,6 @@ FROM [DW Project 313]
 WHERE [Product].[Product Name].&[Bananas]
 
 ```
+
+![photo_2021-05-23_21-19-24](https://user-images.githubusercontent.com/54971231/119273756-a479b080-bc0c-11eb-9509-f411779ce0e0.jpg)
+
