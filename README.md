@@ -50,5 +50,16 @@ WHERE [Product].[Product Name].&[Bananas]
 
 ```
 
+- - - -
+
+### Sample Excel Report & Chart
+
+![ExcelRC](https://github.com/TawfikYasser/dw-sales/blob/main/Excel%20Report%20%26%20Chart.png)
+
+### Sample Power Bi Report & Chart
+
+![Power Bi Report](https://github.com/TawfikYasser/dw-sales/blob/main/PBR.png)
+![Power Bi Chart](https://github.com/TawfikYasser/dw-sales/blob/main/PBC.png)
+
 ![photo_2021-05-23_21-19-24](https://user-images.githubusercontent.com/54971231/119273756-a479b080-bc0c-11eb-9509-f411779ce0e0.jpg)
 
