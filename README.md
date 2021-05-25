@@ -1,6 +1,6 @@
 <div align="center">
 
-# `Sales DB` is Data Warehouse Project
+# `Sales DB` is a Data Warehouse Project
 **This project aims to create a full data warehouse architecture using MS SQL Server**
 
 ![DW Arch](https://user-images.githubusercontent.com/54971231/117863142-c03b9900-b293-11eb-8a08-de3f160a8021.png)
