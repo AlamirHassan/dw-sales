@@ -6,6 +6,6 @@ WHERE [Transaction Date].[Transaction Year].&[2018]
 -----------------------------------------------------------------------------------------
 
 SELECT {[Measures].[Quantity Sold],[Measures].[Total Price]} on COLUMNS,
-UNION([Customer].[City Name].&[Egypt], [Customer].[City Name].&[US]) on ROWS
+UNION([Customer].[City Name].&[Boston], [Customer].[City Name].&[Aurora]) on ROWS
 FROM [DW Project 313]
-WHERE [Transaction Date].[Transaction Month].&[feb]
+WHERE [Transaction Date].[Transaction Month].&[2]
