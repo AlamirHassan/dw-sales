@@ -1,0 +1,26 @@
+% this query gets quantity sold and total price in
+two cities miami and new york
+
+SELECT
+Union (
+[Dim Customer].[City Name].&[New York],
+[Dim Customer].[City Name].&[Miami],
+ALL) ON COLUMNS,
+{[Measures].[Order Quantity],[Measures].[Total Price]} ON ROWS
+FROM [sales]
+
+
+% this query gets quantity sold and total price in
+two month april and may
+
+SELECT
+Union (
+[Dim Transaction Date].[Transaction Year].&[4],
+[Dim Transaction Date].[Transaction Year].&[5],
+ALL) ON COLUMNS,
+{[Measures].[Order Quantity],[Measures].[Total Price]} ON ROWS
+FROM [sales]
+
+
+
+

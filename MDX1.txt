@@ -1,0 +1,7 @@
+% this query gets qunatity sold for each product category except  Seafood category 
+
+select {[Measures].[Quantity Sold]} ON COLUMNS,
+EXCEPT
+([Dim Product].[Category Name].members,
+[Dim Product].[Category Name].&[Seafood]) ON ROWS
+from [DW Project 313]
