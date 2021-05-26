@@ -4,11 +4,12 @@ products.ProductID AS [Product ID],
 customers.CustomerID AS [Customer ID],
 sales.SalesDate AS [Transaction Date],
 SUM(sales.Quantity) AS Quantity,
+sales.Discount,
 SUM(sales.TotalPrice * (1 - sales.Discount) * sales.Quantity) AS [Total Price]
 FROM sales INNER JOIN products ON sales.ProductID = products.ProductID
 INNER JOIN employees ON sales.SalesPersonID = employees.EmployeeID
 INNER JOIN customers ON sales.CustomerID = customers.CustomerID
-GROUP BY sales.TransactionNumber, employees.EmployeeID, products.ProductID, customers.CustomerID, sales.SalesDate
+GROUP BY sales.TransactionNumber, employees.EmployeeID, products.ProductID, customers.CustomerID, sales.SalesDate, sales.Discount
 
 
 - Desctiption
