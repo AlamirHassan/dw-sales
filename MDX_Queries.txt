@@ -1,0 +1,44 @@
+
+1]
+
+SELECT {[Measures].[Quantity Sold],[Measures].[Total Price]} on COLUMNS,
+EXCEPT([Employee].[Gender].[All].Children, [Employee].[Gender].[All].UNKNOWNMEMBER) on ROWS
+FROM [DW Project 313]
+WHERE [Transaction Date].[Transaction Year].&[2018]
+
+
+2]
+
+SELECT {[Measures].[Quantity Sold],[Measures].[Total Price]} on COLUMNS,
+UNION([Customer].[City Name].&[Boston], [Customer].[City Name].&[Aurora]) on ROWS
+FROM [DW Project 313]
+WHERE [Transaction Date].[Transaction Month].&[2]
+
+
+3]
+
+select {[Measures].[Quantity Sold]} ON COLUMNS,
+EXCEPT
+([Dim Product].[Category Name].members,
+[Dim Product].[Category Name].&[Seafood]) ON ROWS
+from [DW Project 313]
+
+
+4]
+
+SELECT
+Union (
+[Transaction Date].[Transaction Month].&[4],
+[Transaction Date].[Transaction Month].&[5],
+ALL) ON COLUMNS,
+{[Measures].[Order Quantity],[Measures].[Total Price]} ON ROWS
+FROM [DW Project 313]
+
+
+5]
+
+SELECT 
+{[Product].[Product Name].&[Bananas],[Product].[Product Name].&[Cake - Mini Cheesecake]} ON COLUMNS,
+Crossjoin ([Employee].[Gender].children,[Employee].[City Name].children) ON ROWS
+FROM [DW Project 313]
+WHERE [Measures].[Quantity Sold]
