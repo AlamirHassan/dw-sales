@@ -42,3 +42,11 @@ SELECT
 Crossjoin ([Employee].[Gender].children,[Employee].[City Name].children) ON ROWS
 FROM [DW Project 313]
 WHERE [Measures].[Quantity Sold]
+
+
+6]
+
+SELECT {[Measures].[Quantity Sold],[Measures].[Total Price]} on COLUMNS,
+Crossjoin([Employee].[City Name].&[Las Vegas],[Customer].[City Name].children) on ROWS
+FROM [DW Project 313]
+WHERE [Transaction Date].[Transaction Month].&[3]
