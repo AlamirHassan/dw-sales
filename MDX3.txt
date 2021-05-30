@@ -1,0 +1,5 @@
+SELECT 
+{[Product].[Product Name].&[Bananas],[Product].[Product Name].&[Cake - Mini Cheesecake]} ON COLUMNS,
+Crossjoin ([Employee].[Gender].children,[Employee].[City Name].children) ON ROWS
+FROM [DW Project 313]
+WHERE [Measures].[Quantity Sold]
