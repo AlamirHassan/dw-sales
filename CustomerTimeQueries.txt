@@ -27,11 +27,7 @@ ORDER BY sales.SalesDate
 
 --Updated Date Dimension Query
 SELECT 
-DISTINCT(
-
- CAST( TRY_CAST(sales.SalesDate AS datetime2) as date )
-
-) AS [Transaction Date] ,
+DISTINCT(CAST( TRY_CAST(sales.SalesDate AS datetime2) as date )) AS [Transaction Date] ,
 
 DAY(TRY_CAST(sales.SalesDate AS datetime2)) AS [Transaction Day],
 MONTH(TRY_CAST(sales.SalesDate AS datetime2)) AS [Transaction Month],
