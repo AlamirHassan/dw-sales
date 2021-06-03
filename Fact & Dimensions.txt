@@ -15,7 +15,7 @@ Product Dimension
 - Modify Date
 - Vitality Days
 ------------------
-Date
+Transaction Date
 - Transaction Date
 - Transaction Day
 - Transaction Month
